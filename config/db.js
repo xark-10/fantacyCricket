@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
-const uri = "mongodb+srv://mariyano:mariyano@task-mariyano.gvvx318.mongodb.net/?retryWrites=true&w=majority&appName=task-mariyano";
+require('dotenv').config();
+
+const uri = process.env.MONGODB_URI;
 
 const connectDB = async () => {
     try {

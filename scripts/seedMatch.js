@@ -1,4 +1,3 @@
-// scripts/seedMatches.js
 const mongoose = require('mongoose');
 const Match = require('../models/Match');
 const matchData = require('../data/match.json');
